@@ -353,7 +353,7 @@ html, body{
 .techpetukazek div {
   opacity: 0;
   animation: fadeInUp 0.8s ease forwards;
-  animation-delay: 0.5s; 
+  animation-delay: 0.5s;
 }
 
 
