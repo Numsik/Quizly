@@ -62,11 +62,12 @@ html, body{
 .techpetukazek {
   margin-top: 150px;
   display: flex;
-  flex-wrap: wrap; /* ← Přidáno */
-  justify-content: center; /* ← zarovná na střed */
-  gap: 30px; /* trochu menší mezery na menších displejích */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
-.techpetukazek div{
+
+.techpetukazek div {
   background-color: white;
   width: 200px;
   height: 250px;
@@ -77,20 +78,26 @@ html, body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; /* Přidáno pro horizontální centrování */
+  padding: 20px;
+  box-sizing: border-box;
 }
-.techpetukazek div p{
-  margin-top: 15px;
-  max-width: 180px;
+
+.techpetukazek div p {
+  margin: 15px 0 0 0; /* Upraveno margin */
+  max-width: 160px; /* Zmenšeno kvůli paddingu */
   text-align: center;
-  margin-top: 10px;
   font-size: 24px;
   word-break: break-word;
+  line-height: 1.2;
 }
-.techpetukazek div img{
+
+.techpetukazek div img {
   width: 85px;
   height: 85px;
-  margin: 0 auto;
   display: block;
+  margin: 0; /* Odstraněno auto margin */
+  flex-shrink: 0; /* Zabrání zmenšování obrázku */
 }
 .whoisitfor{
   margin-top: 50px;
@@ -163,7 +170,7 @@ html, body{
     max-width: 100%;
   }
 
-  .techpetukazek {
+.techpetukazek {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -175,6 +182,26 @@ html, body{
     width: 100%;
     max-width: 200px;
   }
+}
+
+@media (max-width: 480px) {
+  .techpetukazek div {
+    width: 90%;
+    max-width: 180px;
+    height: 220px;
+    padding: 15px;
+  }
+  
+  .techpetukazek div img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .techpetukazek div p {
+    font-size: 20px;
+    max-width: 140px;
+  }
+}
 
   .whoisitfor {
     flex-direction: column;
