@@ -8,6 +8,7 @@ html, body{
     padding: 0;
     width: 100%;
 }
+
 .hlavnicast{
     margin-top: 60px;
     display: flex;
@@ -165,13 +166,14 @@ html, body{
   .techpetukazek {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 30px;
     margin-top: 80px;
   }
 
   .techpetukazek div {
-    width: 90%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 200px;
   }
 
   .whoisitfor {
@@ -234,9 +236,9 @@ html, body{
     width: 100%;
     max-width: 444px;
     height: 50px;
-    gap: 0; /* žádná mezera mezi inputem a tlačítkem */
+    gap: 0; 
     margin: 50px auto 0;
-    padding: 0; /* žádný padding kolem */
+    padding: 0; 
   }
 
   .email-form input {
@@ -244,9 +246,9 @@ html, body{
     height: 50px;
     padding: 0 15px;
     font-size: 18px;
-    border-radius: 50px 0 0 50px; /* zaoblení jen vlevo */
+    border-radius: 50px 0 0 50px;
     border: 1px solid #ccc;
-    border-right: none; /* odstraníme pravý okraj, aby nebyla mezera k tlačítku */
+    border-right: none;
     margin-left: 0;
     box-sizing: border-box;
   }
@@ -255,10 +257,10 @@ html, body{
     height: 50px;
     width: 100px;
     font-size: 18px;
-    border-radius: 0 50px 50px 0; /* zaoblení jen vpravo */
+    border-radius: 0 50px 50px 0; 
     cursor: pointer;
     border: 1px solid #ccc;
-    border-left: none; /* odstraníme levý okraj, aby tlačítko "přiléhalo" k inputu */
+    border-left: none;
   }
 }
 
@@ -302,9 +304,9 @@ html, body{
     width: 70px; 
   }
 }
-/* Logo viditelné pořád */
+
 .Quizly {
-  position: absolute; /* neměnit na fixed */
+  position: absolute; 
   top: 10px;
   left: 20px;
   font-size: 28px;
@@ -317,7 +319,7 @@ html, body{
   z-index: 1000;
 }
 
-/* Animace fadeInUp definice */
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -329,7 +331,7 @@ html, body{
   }
 }
 
-/* Animace obecně */
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -341,22 +343,21 @@ html, body{
   transform: translateY(0);
 }
 
-/* Animace celé sekce whoisitfor */
+
 .whoisitfor {
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
   animation-delay: 0.3s;
 }
 
-/* Animace pro jednotlivé 5 divů uvnitř .techpetukazek */
-/* Přidáme classu "anim-item" do HTML nebo použijeme přímo CSS selektor */
+
 .techpetukazek div {
   opacity: 0;
   animation: fadeInUp 0.8s ease forwards;
-  animation-delay: 0.5s; /* základní zpoždění */
+  animation-delay: 0.5s; 
 }
 
-/* Pro efektnější načítání - každý div posunout v delay */
+
 .techpetukazek div:nth-child(1) {
   animation-delay: 0.5s;
 }
@@ -373,7 +374,7 @@ html, body{
   animation-delay: 1.3s;
 }
 
-/* Pro jistotu zrušit animaci pro .hlavnicast a druhacast pokud nechceš */
+
 .hlavnicast,
 .druhacast {
   opacity: 0;
