@@ -322,6 +322,10 @@ html, body{
   .ai{
     font-size: 20px;
   }
+    .email-form{
+        width: 270px;
+        height: 70px;
+    }
     body{
         overflow-x: hidden;
     }
