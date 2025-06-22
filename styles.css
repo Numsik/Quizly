@@ -318,9 +318,13 @@ html, body{
   }
 }
 @media (max-width: 394px) and (min-width: 200px){
+    
   .ai{
     font-size: 20px;
   }
+    body{
+        overflow-x: hidden;
+    }
   .whoitsforr{
     font-size: 55px;
   }
